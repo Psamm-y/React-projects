@@ -41,3 +41,8 @@ img {
   height: 200px;
   width: 300px;
 }
+h1 {
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
