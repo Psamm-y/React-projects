@@ -1,10 +1,11 @@
 import React from 'react';
-import Counter from './Counter';
+
+import Meal from './Meal API project/Meal';
 
 const App = () => {
   return (
     <div>
-      <Counter />
+      <Meal />
     </div>
   );
 };
