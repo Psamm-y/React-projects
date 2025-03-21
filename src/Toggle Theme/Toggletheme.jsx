@@ -2,26 +2,26 @@ import React, { useState } from 'react';
 import './toggle.css';
 const Toggletheme = () => {
   const [backgroundColor, setBackgroundColor] = useState('white');
-  const [textcolor, setTextColor] = useState('#1b1b1b');
+  const [textColor, setTextColor] = useState('#1b1b1b');
   const [buttonStyle, setbuttonStyle] = useState('white');
 
   const handleClick = () => {
     setBackgroundColor(backgroundColor === 'white' ? '#1b1b1b' : 'white');
-    setTextColor(textcolor === '#1b1b1b' ? '#ffa31a' : '#1b1b1b');
+    setTextColor(textColor === '#1b1b1b' ? '#ffa31a' : '#1b1b1b');
     setbuttonStyle(backgroundColor === 'white' ? '#1b1b1b' : 'white');
   };
 
   return (
     <section
       className="page"
-      style={{ backgroundColor, color: `${textcolor}` }}
+      style={{ backgroundColor, color: `${textColor}` }}
     >
       <button
         onClick={handleClick}
         style={{
           buttonStyle,
-          color: { textcolor },
-          border: `2px solid ${textcolor}`,
+          color: { textColor },
+          border: `2px solid ${textColor}`,
         }}
       >
         {backgroundColor === '#1b1b1b' ? 'Dark theme' : 'Light theme'}

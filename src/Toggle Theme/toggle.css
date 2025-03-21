@@ -5,11 +5,20 @@
 }
 
 .page {
-  width: 100vw;
   height: 100vh;
-}
-.page .content {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.page .content {
+}
+.page button {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  background: transparent;
+  padding: 2em;
+}
+h1 {
+  font-size: 8em;
 }
