@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './toggle.css';
 const Toggletheme = () => {
   const [backgroundColor, setBackgroundColor] = useState('white');
   const [textcolor, setTextColor] = useState('#1b1b1b');
@@ -12,7 +12,10 @@ const Toggletheme = () => {
   };
 
   return (
-    <section style={{ backgroundColor, color: `${textcolor}` }}>
+    <section
+      className="page"
+      style={{ backgroundColor, color: `${textcolor}` }}
+    >
       <button
         onClick={handleClick}
         style={{
