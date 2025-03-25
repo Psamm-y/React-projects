@@ -18,10 +18,18 @@ const Form = () => {
 
   const validate = (e) => {
     e.preventDefault();
+
+    if (userName.trim().length > 8) {
+      setErrorUserName('');
+      setUserColor('green');
+    } else {
+      setErrorUserName('Username must be greater than 8 characters');
+      setUserColor('red');
+    }
   };
   return (
     <div className="card">
-      <div className="card-image"></div>
+      {/* <div className="card-image"></div> */}
       <form>
         <input
           type="text"

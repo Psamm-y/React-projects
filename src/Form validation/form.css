@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(to right, aliceblue, rgb(110, 182, 246));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+}
+input {
+  outline: none;
+  border: 2px solid;
+}
+.card-image {
+}
