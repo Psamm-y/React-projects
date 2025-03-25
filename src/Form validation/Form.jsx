@@ -14,7 +14,7 @@ const Form = () => {
   const [userColor, setUserColor] = useState('');
   const [emailColor, setEmailColor] = useState('');
   const [passwordColor, setPasswordColor] = useState('');
-  const [confirmPasswordColor, setConfrimPasswordColor] = useState('');
+  const [confirmPasswordColor, setConfirmPasswordColor] = useState('');
 
   const validate = (e) => {
     e.preventDefault();
@@ -25,6 +25,30 @@ const Form = () => {
     } else {
       setErrorUserName('Username must be greater than 8 characters');
       setUserColor('red');
+    }
+
+    if (email.includes('@gmail')) {
+      setErrorEmail('');
+      setEmailColor('green');
+    } else {
+      setErrorEmail('Email should include "@gmail"');
+      setEmailColor('red');
+    }
+
+    if (password.length > 8) {
+      setPasswordColor('green');
+      setErrorPassword('');
+    } else {
+      setErrorPassword('Password must be 8 charaters long');
+      setPasswordColor('red');
+    }
+
+    if (password !== '' && password == confirmPassword) {
+      setConfirmPasswordColor('green');
+      setErrorConfirmPassword('');
+    } else {
+      setConfirmPasswordColor('red');
+      setErrorConfirmPassword('Passwords do not match');
     }
   };
   return (
@@ -40,6 +64,7 @@ const Form = () => {
         />
         <p className="error">{errorUserName}</p> {/*to display error if any*/}
         <input
+          required
           type="email"
           placeholder="Email"
           value={email}
@@ -48,6 +73,7 @@ const Form = () => {
         />
         <p className="error">{errorEmail}</p>
         <input
+          required
           type="password"
           placeholder="Password"
           value={password}
@@ -56,6 +82,7 @@ const Form = () => {
         />
         <p className="error">{errorPassword}</p>
         <input
+          required
           type="password"
           placeholder="Confirm password"
           value={confirmPassword}
