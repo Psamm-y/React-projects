@@ -6,7 +6,6 @@ const HiddenSearchBar = () => {
 
   const handleClick = (e) => {
     setBgColor(showInput ? 'white' : 'red');
-
     setShowInput(!showInput);
   };
   return (
