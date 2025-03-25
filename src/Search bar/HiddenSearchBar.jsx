@@ -6,8 +6,11 @@ const HiddenSearchBar = () => {
   const [bgColor, setBgColor] = useState('white');
 
   const handleClick = (e) => {
-    setBgColor(showInput ? 'white' : '#1a1a1a');
-    setShowInput(!showInput);
+    setBgColor('#1a1a1a');
+    if (e.target.className === 'container') {
+      setShowInput(false);
+      setBgColor('white');
+    }
   };
   return (
     <section
