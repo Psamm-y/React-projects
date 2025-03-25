@@ -15,6 +15,9 @@ const Testimonial = () => {
       quote: 'This product has completely changed my life!',
       author: 'Bob Johnson',
     },
+    {
+      quote: "I've never used a product of this sort, Truly relieving",
+    },
   ];
   const handlePrevClick = () => {
     setCurrentState(
