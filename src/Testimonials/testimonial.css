@@ -1,0 +1,37 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial {
+  background-color: #e5fffc;
+  width: max-content;
+  padding: 3em;
+  display: grid;
+  place-items: center;
+}
+.testimonial-author {
+  font-weight: bold;
+}
+.testimonial-quote {
+  font-style: italic;
+}
+.testimonials-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 17em;
+}
+button {
+  background: transparent;
+  padding: 0.4em;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #00d1b9;
+  color: white;
+  border: 1px solid #00d1b9;
+}

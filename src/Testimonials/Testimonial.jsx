@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './testimonial.css';
 const Testimonial = () => {
   const [currentState, setCurrentState] = useState(0);
   const testimonials = [
@@ -16,7 +16,30 @@ const Testimonial = () => {
       author: 'Bob Johnson',
     },
   ];
-  return <div>Testimonial</div>;
+  const handlePrevClick = () => {
+    setCurrentState(
+      (currentState + testimonials.length - 1) % testimonials.length
+    );
+  };
+
+  const handleNextClick = () => {
+    setCurrentState((currentState + 1) % testimonials.length);
+  };
+  return (
+    <div className="testimonial">
+      <div className="testimonial-quote">
+        "{testimonials[currentState].quote}"
+      </div>
+
+      <div className="testimonial-author">
+        -{testimonials[currentState].author}
+      </div>
+      <div className="testimonials-nav">
+        <button onClick={handlePrevClick}>Prev</button>
+        <button onClick={handleNextClick}>Next</button>
+      </div>
+    </div>
+  );
 };
 
 export default Testimonial;
