@@ -30,12 +30,14 @@ const Testimonial = () => {
   };
   return (
     <div className="testimonial">
-      <div className="testimonial-quote">
-        "{testimonials[currentState].quote}"
-      </div>
+      <div className="testimonial-2">
+        <div className="testimonial-quote">
+          "{testimonials[currentState].quote}"
+        </div>
 
-      <div className="testimonial-author">
-        -{testimonials[currentState].author}
+        <div className="testimonial-author">
+          -{testimonials[currentState].author}
+        </div>
       </div>
       <div className="testimonials-nav">
         <button onClick={handlePrevClick}>Prev</button>
