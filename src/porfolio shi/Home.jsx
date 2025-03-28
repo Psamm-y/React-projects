@@ -8,7 +8,11 @@ const Home = () => {
       <div className="image">
         <img src={Matriculation} alt="" />
       </div>
-      <div className="content"></div>
+      <div className="content">
+        <div className="greeting">
+          Hi, I'm <span>Psammy</span>{' '}
+        </div>
+      </div>
     </section>
   );
 };

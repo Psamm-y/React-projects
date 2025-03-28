@@ -1,6 +1,7 @@
-.image {
-  height: 5em;
-}
 img {
-  height: 50em;
+  height: 10em;
+}
+.homepage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
