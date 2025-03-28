@@ -1,7 +1,7 @@
 import React, { useId } from 'react';
-import { accordionData } from './Accordion project/utils/content';
-import Accordion from './Accordion project/Accordion';
-import Form from './Form validation/Form';
+
+import Header from './porfolio shi/Header';
+import Home from './porfolio shi/Home';
 
 const App = () => {
   const id = useId();
@@ -12,7 +12,8 @@ const App = () => {
           <Accordion title={title} content={content} />
         ))}
       </div> */}
-      <Form />
+      <Header />
+      <Home />
     </>
   );
 };

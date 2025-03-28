@@ -1,0 +1,66 @@
+import React, { useState } from 'react';
+import './header.css';
+import { FaSun, FaMoon } from 'react-icons/fa';
+const Header = () => {
+  const [active, setActive] = useState(false);
+
+  const toggleDarkMode = (e) => {
+    e.preventDefault();
+    setActive(!active);
+  };
+  return (
+    <header className={active ? 'light ' : 'dark'}>
+      <div className={active ? 'lightName ' : 'darkName'}>Samuel Ampadu.</div>
+      <nav>
+        <ul>
+          <li>
+            <a
+              style={active ? { color: 'black' } : { color: 'white' }}
+              href="#"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a style={active ? { color: 'black' } : { color: 'white' }} href="">
+              About
+            </a>{' '}
+          </li>
+          <li>
+            <a
+              style={active ? { color: 'black' } : { color: 'white' }}
+              href="#"
+            >
+              Skills
+            </a>
+          </li>
+          <li>
+            <a
+              style={active ? { color: 'black' } : { color: 'white' }}
+              href="#"
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              style={active ? { color: 'black' } : { color: 'white' }}
+              href="#"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        className="toggle"
+        onClick={toggleDarkMode}
+        style={active ? { color: '#002647' } : { color: 'gold' }}
+      >
+        {active ? <FaMoon /> : <FaSun />}
+      </div>
+    </header>
+  );
+};
+
+export default Header;
