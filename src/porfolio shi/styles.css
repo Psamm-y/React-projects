@@ -2,6 +2,7 @@
 :root {
   --primary-color: #ffd700;
   --secondary-color: #002647;
+  --third-color: #0580ec;
 }
 html {
   min-height: 100em;

@@ -30,3 +30,33 @@ main {
 .greeting span {
   color: var(--primary-color);
 }
+.role {
+  font-size: 1.3rem;
+  margin-bottom: 2em;
+}
+.refer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.more-btn {
+  padding: 0.4em 1em;
+  color: #ffffff;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 1.2em;
+  font-size: 0.7em;
+}
+svg {
+  font-size: 1.2em;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+.link {
+  display: flex;
+  align-items: center;
+}
