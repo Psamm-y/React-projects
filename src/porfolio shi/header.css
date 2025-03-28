@@ -3,9 +3,11 @@
   --primary-color: #ffd700;
   --secondary-color: #002647;
 }
-body {
-  min-height: 100vh;
+html {
+  min-height: 100em;
   background: linear-gradient(to right bottom, #0580ec, var(--secondary-color));
+}
+body {
 }
 * {
   margin: 0;

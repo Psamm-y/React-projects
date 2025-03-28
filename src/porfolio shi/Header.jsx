@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './header.css';
+import './styles.css';
 import { FaSun, FaMoon } from 'react-icons/fa';
 const Header = () => {
   const [active, setActive] = useState(false);

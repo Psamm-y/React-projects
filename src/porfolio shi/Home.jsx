@@ -1,14 +1,15 @@
 import React from 'react';
 import Matriculation from '../assets/Matriculation.jpg';
 import './home.css';
+import './styles.css';
 const Home = () => {
   return (
-    <div>
+    <section className="homepage">
       <div className="image">
         <img src={Matriculation} alt="" />
       </div>
       <div className="content"></div>
-    </div>
+    </section>
   );
 };
 
