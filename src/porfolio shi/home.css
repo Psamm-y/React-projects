@@ -1,7 +1,32 @@
 img {
-  height: 10em;
+  height: 30em;
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+  width: 100%;
 }
 .homepage {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0em 0em 2em rgba(0, 0, 0, 0.514);
+  border-radius: 1em;
+  height: 30em;
+}
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  color: var(--secondary-color);
+}
+.greeting {
+  font-size: 3em;
+}
+.greeting span {
+  color: var(--primary-color);
 }
