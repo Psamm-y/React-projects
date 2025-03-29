@@ -7,7 +7,7 @@ const Header = () => {
 
   const toggleDarkMode = (e) => {
     e.preventDefault();
-    setActive(!active);
+    setTimeout(() => setActive(!active), 100);
   };
   return (
     <header className={active ? 'light ' : 'dark'}>

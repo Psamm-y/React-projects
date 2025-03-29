@@ -23,10 +23,12 @@ ul {
 }
 ul li a {
   padding: 0.8em;
-
   text-decoration: none;
+  transition: 0.6s ease;
 }
-
+ul li a:hover {
+  background-color: #0580ec89;
+}
 nav {
   width: 50%;
 }
@@ -44,4 +46,13 @@ nav {
 .light {
   color: var(--secondary-color);
   background-color: var(--primary-color);
+}
+.toggle svg {
+  transition: 1s ease;
+}
+.dark .toggle svg:active {
+  transform: rotate(360deg);
+}
+.light .toggle svg:active {
+  transform: rotate(-360deg);
 }

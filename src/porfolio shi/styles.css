@@ -4,6 +4,9 @@
   --secondary-color: #002647;
   --third-color: #0580ec;
 }
+button {
+  cursor: pointer;
+}
 html {
   min-height: 100em;
   background: linear-gradient(to right bottom, #0580ec, var(--secondary-color));
