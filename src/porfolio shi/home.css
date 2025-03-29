@@ -15,6 +15,7 @@ main {
   width: 100%;
   display: flex;
   align-items: center;
+  scroll-margin-top: 5em;
   justify-content: center;
 }
 .content {
@@ -30,6 +31,7 @@ main {
 .greeting span {
   color: var(--primary-color);
 }
+
 .role {
   font-size: 1.3rem;
   margin-bottom: 2em;
@@ -41,11 +43,16 @@ main {
 }
 .more-btn {
   padding: 0.4em 1em;
-  color: #ffffff;
+
   background-color: var(--secondary-color);
   border: none;
   border-radius: 1.2em;
   font-size: 0.7em;
+}
+.more-btn a {
+  color: #ffffff;
+
+  text-decoration: none;
 }
 .homepage svg {
   font-size: 1.2em;

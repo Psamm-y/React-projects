@@ -15,7 +15,9 @@ const Home = () => {
           </div>
           <div className="role">Full Stack Developer</div>
           <div className="refer">
-            <button className="more-btn">More about me</button>
+            <button className="more-btn">
+              <a href="#about"> More about me</a>
+            </button>
             <div className="social-links">
               <a
                 href="https://linkedin.com/in/ampadu-samuel"
