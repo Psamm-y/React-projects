@@ -1,5 +1,8 @@
 .about {
   margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .section-head {
   display: flex;
@@ -10,4 +13,14 @@
 .about-me {
   background-image: linear-gradient(to bottom right, #001e38, #002647);
   color: white;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion {
+  width: 50%;
+}
+.head p {
+  width: 70%;
 }

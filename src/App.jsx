@@ -3,7 +3,8 @@ import React, { useId } from 'react';
 import Header from './porfolio shi/Header';
 import Home from './porfolio shi/Home';
 import About from './porfolio shi/About';
-import { desc } from './porfolio shi/utils/about';
+import desc from './porfolio shi/utils/about';
+import Accordion from './porfolio shi/Accordion';
 const App = () => {
   const id = useId();
   return (

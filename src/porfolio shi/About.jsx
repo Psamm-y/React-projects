@@ -1,26 +1,19 @@
-import React, { useState } from 'react';
+import React, { useId, useState } from 'react';
 import './about.css';
-import { desc } from './utils/about';
-const About = () => {
-  const [expand, setExpand] = useState(false);
+import Accordion from './Accordion';
+import desc from './utils/about';
+const About = ({ title, essay }) => {
+  const id = useId();
   return (
     <section className="about" id="About">
       <div className="section-head">
         <h2>About Me</h2>
       </div>
-      {desc.map((description) => (
-        <div>
-          <div className="title">
-            <p> {description.title}</p>
-            <button onClick={() => setExpand(!expand)}>
-              {expand ? '-' : '+'}
-            </button>
-          </div>
-          <div className="expand">
-            {expand ? <p>{description.essay}</p> : ''}
-          </div>
-        </div>
-      ))}
+      <div className="">
+        {desc.map(({ title, essay }) => (
+          <Accordion key={Math.random()} title={title} essay={essay} />
+        ))}
+      </div>
     </section>
   );
 };
