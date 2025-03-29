@@ -49,14 +49,23 @@ main {
 }
 svg {
   font-size: 1.2em;
+  transition: 0.5s ease;
 }
 .social-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 30%;
+}
+svg:hover {
+  color: var(--third-color);
+  transform: scale(1.5);
 }
 .link {
   display: flex;
   align-items: center;
+}
+.social-links a {
+  text-decoration: none;
+  color: inherit;
 }

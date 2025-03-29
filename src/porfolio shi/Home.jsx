@@ -17,15 +17,27 @@ const Home = () => {
           <div className="refer">
             <button className="more-btn">More about me</button>
             <div className="social-links">
-              <span className="link">
+              <a
+                href="https://linkedin.com/in/ampadu-samuel"
+                target="_blank"
+                className="link"
+              >
                 <FaLinkedin />
-              </span>
-              <span className="link">
+              </a>
+              <a
+                href="https://github.com/psamm-y"
+                target="_blank"
+                className="link"
+              >
                 <FaGithub />
-              </span>
-              <span className="link">
+              </a>
+              <a
+                href="https://x.com/ampadu_psamuel"
+                target="_blank"
+                className="link"
+              >
                 <FaXTwitter />
-              </span>
+              </a>
             </div>
           </div>
         </div>
