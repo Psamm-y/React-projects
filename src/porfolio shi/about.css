@@ -14,11 +14,11 @@
   background-image: linear-gradient(to bottom right, #001e38, #002647);
   color: white;
 }
-.head {
+.accordion-header {
   display: flex;
   justify-content: space-between;
 }
-.accordion {
+.whole-accordion {
   width: 50%;
 }
 .head p {
