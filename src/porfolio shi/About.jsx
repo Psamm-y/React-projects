@@ -10,7 +10,12 @@ const About = () => {
       </div>
       {desc.map((description) => (
         <div>
-          <div className="title">{description.title}</div>
+          <div className="title">
+            <p> {description.title}</p>
+            <button onClick={() => setExpand(!expand)}>
+              {expand ? '-' : '+'}
+            </button>
+          </div>
           <div className="expand">
             {expand ? <p>{description.essay}</p> : ''}
           </div>
