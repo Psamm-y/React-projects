@@ -2,6 +2,7 @@ import React, { useId } from 'react';
 
 import Header from './porfolio shi/Header';
 import Home from './porfolio shi/Home';
+import About from './porfolio shi/About';
 
 const App = () => {
   const id = useId();
@@ -14,6 +15,7 @@ const App = () => {
       </div> */}
       <Header />
       <Home />
+      <About />
     </>
   );
 };

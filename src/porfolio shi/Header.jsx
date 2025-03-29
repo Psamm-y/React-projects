@@ -23,9 +23,13 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a style={active ? { color: 'black' } : { color: 'white' }} href="">
+            <a
+              id="#About"
+              style={active ? { color: 'black' } : { color: 'white' }}
+              href=""
+            >
               About
-            </a>{' '}
+            </a>
           </li>
           <li>
             <a
