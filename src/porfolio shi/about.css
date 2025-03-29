@@ -1,4 +1,4 @@
-.about {
+.about-section {
   margin-top: 5em;
   display: flex;
   flex-direction: column;
@@ -17,12 +17,32 @@
 .accordion-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+.accordion-header button {
+  background-color: var(--third-color);
+  width: 1.5em;
+  height: 1.5em;
+  border: none;
+  border-radius: 1em;
+  font-weight: 600;
+  color: white;
 }
 .whole-accordion {
   background-color: #001e38;
   color: white;
   padding: 1em;
+  margin-bottom: 0.5em;
 }
 .head p {
   width: 70%;
+}
+.about {
+  width: 70%;
+}
+.accordion-content {
+  width: 70%;
+  font-size: 0.8em;
+  color: var(--third-color);
 }

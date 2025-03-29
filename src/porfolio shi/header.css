@@ -54,5 +54,5 @@ nav {
   transform: rotate(360deg);
 }
 .light .toggle svg:active {
-  transform: rotate(-360deg);
+  transform: rotate(-720deg);
 }

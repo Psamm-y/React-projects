@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import './about.css';
 const Accordion = ({ title, essay }) => {
   const [expand, setExpand] = useState(false);
 

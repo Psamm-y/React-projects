@@ -5,11 +5,11 @@ import desc from './utils/about';
 const About = ({ title, essay }) => {
   const id = useId();
   return (
-    <section className="about" id="About">
+    <section className="about-section" id="About">
       <div className="section-head">
         <h2>About Me</h2>
       </div>
-      <div>
+      <div className="about">
         {desc.map(({ title, essay }) => (
           <div className="whole-accordion">
             <Accordion key={Math.random()} title={title} essay={essay} />
