@@ -35,14 +35,12 @@
   padding: 1em;
   margin-bottom: 0.5em;
 }
-.head p {
-  width: 70%;
-}
+
 .about {
   width: 70%;
 }
 .accordion-content {
-  width: 70%;
+  width: 80%;
   font-size: 0.8em;
-  color: var(--third-color);
+  margin-top: 1em;
 }
