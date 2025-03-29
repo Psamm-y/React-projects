@@ -4,5 +4,9 @@ const desc = [{
 }, {
   title: "How experienced am I?",
   essay:"With a strong foundation in computer science and ongoing experience in software development, I've had the opportunity to work on a variety of personal projects, from web applications to mobile apps. My expertise includes programming languages like JavaScript, which I use to deliver high-quality software solutions."
-  }]
+  },
+  {
+    title: "What do I do in my leisure?",
+    essay: "Outside of work you can find me reading some self-development books. At other times, when I'm not behind my laptop, I'm playing Codm. "
+}]
 export default desc;

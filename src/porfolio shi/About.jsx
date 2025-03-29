@@ -5,7 +5,7 @@ import desc from './utils/about';
 const About = ({ title, essay }) => {
   const id = useId();
   return (
-    <section className="about-section" id="About">
+    <section className="about-section" id="about">
       <div className="section-head">
         <h2>About Me</h2>
       </div>

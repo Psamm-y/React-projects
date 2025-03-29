@@ -17,16 +17,15 @@ const Header = () => {
           <li>
             <a
               style={active ? { color: 'black' } : { color: 'white' }}
-              href="#"
+              href="#home"
             >
               Home
             </a>
           </li>
           <li>
             <a
-              id="#About"
               style={active ? { color: 'black' } : { color: 'white' }}
-              href=""
+              href="#about"
             >
               About
             </a>

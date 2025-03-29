@@ -7,7 +7,7 @@ import './home.css';
 import './styles.css';
 const Home = () => {
   return (
-    <main>
+    <main id="home">
       <section className="homepage">
         <div className="content">
           <div className="greeting">
