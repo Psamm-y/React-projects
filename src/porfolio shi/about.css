@@ -1,0 +1,13 @@
+.about {
+  margin-top: 5em;
+}
+.section-head {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  align-items: center;
+}
+.about-me {
+  background-image: linear-gradient(to bottom right, #001e38, #002647);
+  color: white;
+}
