@@ -9,9 +9,11 @@ const About = ({ title, essay }) => {
       <div className="section-head">
         <h2>About Me</h2>
       </div>
-      <div className="whole-accordion">
+      <div>
         {desc.map(({ title, essay }) => (
-          <Accordion key={Math.random()} title={title} essay={essay} />
+          <div className="whole-accordion">
+            <Accordion key={Math.random()} title={title} essay={essay} />
+          </div>
         ))}
       </div>
     </section>
