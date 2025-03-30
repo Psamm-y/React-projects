@@ -8,5 +8,6 @@ const desc = [{
   {
     title: "What do I do in my leisure?",
     essay: "Outside of work you can find me reading some self-development books. At other times, when I'm not behind my laptop, I'm playing Codm. "
-}]
+  },
+]
 export default desc;
