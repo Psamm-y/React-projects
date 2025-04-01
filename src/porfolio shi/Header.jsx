@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './header.css';
 import './styles.css';
 import { FaSun, FaMoon } from 'react-icons/fa';
+import Hamburger from './Hamburger';
 const Header = () => {
   const [active, setActive] = useState(false);
 
@@ -62,6 +63,9 @@ const Header = () => {
         style={active ? { color: '#002647' } : { color: 'gold' }}
       >
         {active ? <FaMoon /> : <FaSun />}
+      </div>
+      <div>
+        <Hamburger />
       </div>
     </header>
   );
