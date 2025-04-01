@@ -45,3 +45,9 @@
   font-size: 0.8em;
   margin-top: 1em;
 }
+@media only screen and (max-width: 760px) {
+  .about {
+    padding: 1em;
+    width: 100%;
+  }
+}
