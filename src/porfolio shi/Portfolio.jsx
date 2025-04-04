@@ -4,6 +4,7 @@ import Home from './Home';
 import About from './About';
 
 import './hamburger.css';
+import Skills from './Skills';
 const Portfolio = () => {
   const [active, setActive] = useState(false);
   return (
@@ -11,6 +12,7 @@ const Portfolio = () => {
       <Header active={active} setActive={setActive} />
       <Home />
       <About />
+      <Skills />
     </div>
   );
 };
