@@ -5,9 +5,10 @@ import About from './About';
 
 import './hamburger.css';
 const Portfolio = () => {
+  const [active, setActive] = useState(false);
   return (
     <div>
-      <Header />
+      <Header active={active} setActive={setActive} />
       <Home />
       <About />
     </div>

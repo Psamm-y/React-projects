@@ -3,9 +3,7 @@ import './header.css';
 import './styles.css';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import Hamburger from './Hamburger';
-const Header = () => {
-  const [active, setActive] = useState(false);
-
+const Header = ({ active, setActive }) => {
   const toggleDarkMode = (e) => {
     e.preventDefault();
     setTimeout(() => setActive(!active), 100);

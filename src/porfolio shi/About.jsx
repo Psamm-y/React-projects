@@ -11,7 +11,7 @@ const About = ({ title, essay }) => {
       </div>
       <div className="about">
         {desc.map(({ title, essay }) => (
-          <div className="whole-accordion">
+          <div key={Math.random()} className="whole-accordion">
             <Accordion key={Math.random()} title={title} essay={essay} />
           </div>
         ))}
