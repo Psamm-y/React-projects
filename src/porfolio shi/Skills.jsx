@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaTools, FaLightbulb, FaHtml5 } from 'react-icons/fa';
+import { technicalSkills, softSkills } from './utils/skills';
 import './skills.css';
 const Skills = () => {
   return (
@@ -14,16 +15,30 @@ const Skills = () => {
             <h3>Technical Skills</h3>
           </div>
           <div className="skills-list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            {technicalSkills.map(({ skill, skillIcon, skillPercentage }) => (
+              <div className="skill">
+                <div>
+                  <span>{skill}</span>
+                </div>
+                <div className="whole-bar">
+                  <div
+                    className="percent"
+                    style={{ width: skillPercentage }}
+                  ></div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         <div className="soft">
           <div className="soft-header">
             <FaLightbulb className="icon" />
             <h3>Soft skills</h3>
+          </div>
+          <div className="skills-list">
+            {softSkills.map((skill) => (
+              <div>{skill}</div>
+            ))}
           </div>
         </div>
       </div>

@@ -27,5 +27,27 @@
 }
 .technical-header,
 .soft-header {
+  width: max-content;
+
   display: flex;
+  padding: 0.5em;
+}
+.whole-bar {
+  position: relative;
+  height: 0.4em;
+  width: 10em;
+  background-color: var(--secondary-color);
+  border-radius: 0.2em;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.percent {
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 100%;
+  border-radius: inherit;
 }
