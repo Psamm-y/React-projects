@@ -1,4 +1,31 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 24em;
+}
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.technical,
+.soft {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0000;
+}
+.soft .icon,
+.technical .icon {
+  font-size: 2em;
+  margin-right: 0.2em;
+  color: inherit;
+}
+.technical h3,
+.soft h3 {
+  font-size: 1.5em;
+}
+.technical-header,
+.soft-header {
+  display: flex;
 }
