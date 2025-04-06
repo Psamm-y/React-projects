@@ -3,7 +3,7 @@ import './about.css';
 import Accordion from './Accordion';
 import desc from './utils/about';
 import image from '../assets/Psammy.jpg';
-import { FaCalendar, FaPhone } from 'react-icons/fa';
+import { FaCalendar, FaGraduationCap, FaPhone } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
 const About = () => {
@@ -27,7 +27,7 @@ const About = () => {
               <span>
                 <FaCalendar className="icon" /> Birthday:
               </span>
-              &nbsp; 11th August 2005
+              &nbsp; 11th August, 2005
             </p>
             <p>
               <span>
@@ -46,6 +46,12 @@ const About = () => {
                 <MdEmail className="icon" /> Email:
               </span>
               &nbsp;ampadupsamuel1@gmail.com
+            </p>
+            <p>
+              <span>
+                <FaGraduationCap /> School:
+              </span>
+              &nbsp; University of Ghana
             </p>
           </div>
         </div>
