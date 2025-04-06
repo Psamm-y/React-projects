@@ -53,3 +53,12 @@
     width: 100%;
   }
 }
+/* Main about styles */
+.main-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8em;
+}
+.main-about img {
+  height: 20em;
+}
