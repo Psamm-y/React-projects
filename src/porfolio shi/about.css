@@ -62,10 +62,24 @@
 .main-about img {
   height: 20em;
 }
+.main-about .header h3 {
+  font-size: 1.5em;
+  color: #004078;
+}
 .about-section .icon {
   font-size: 1em;
+  margin-right: 0.5em;
+}
+.more-info p:nth-child(4) .icon,
+.more-info p:nth-child(5) .icon {
+  font-size: 1.1em;
 }
 .info-section .more-info p {
   display: flex;
   align-items: center;
+}
+.more-info p span {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }

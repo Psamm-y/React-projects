@@ -49,7 +49,7 @@ const About = () => {
             </p>
             <p>
               <span>
-                <FaGraduationCap /> School:
+                <FaGraduationCap className="icon" /> School:
               </span>
               &nbsp; University of Ghana
             </p>
