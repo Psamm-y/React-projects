@@ -16,13 +16,34 @@ body {
   padding-top: 5em;
 }
 .move-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 2em;
   right: 2em;
   background-color: var(--third-color);
+  padding: 2em;
+  width: 2em;
+  height: 2em;
+  border-radius: 2em;
+  border: none;
+  animation: jump 2s infinite;
+}
+@keyframes jump {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 0.5em;
+  }
+  100% {
+    margin-top: 0.5em;
+  }
 }
 .move-to-top a {
   text-decoration: none;
+  font-size: 2em;
   color: inherit;
 }
 .portfolio {

@@ -20,6 +20,9 @@ const Portfolio = () => {
     }
   };
 
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: smooth });
+  };
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -33,11 +36,13 @@ const Portfolio = () => {
       <Home />
       <About />
       <Skills />
-      <div className="move-to-top">
-        <a href="#">
-          <GoMoveToTop />
-        </a>
-      </div>
+      {showButton && (
+        <button className="move-to-top">
+          <a href="#">
+            <GoMoveToTop />
+          </a>
+        </button>
+      )}
     </div>
   );
 };
