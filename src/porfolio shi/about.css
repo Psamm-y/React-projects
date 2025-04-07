@@ -53,7 +53,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.8em;
-  margin-bottom: 4rem;
+  margin-bottom: 4.5rem;
 }
 .main-about img {
   height: 20em;
@@ -114,10 +114,9 @@
   }
   .main-about {
     grid-template-columns: 1fr;
+    margin-bottom: 1rem;
   }
-  .square {
-    border-radius: 1em;
-  }
+
   .about-image {
     margin-bottom: 3em;
   }

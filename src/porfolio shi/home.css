@@ -82,7 +82,7 @@ main {
     grid-template-columns: 1fr;
     margin-bottom: 15em;
   }
-  img {
+  .homepage img {
     border-radius: 1em;
   }
 }
