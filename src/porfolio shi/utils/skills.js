@@ -4,15 +4,23 @@ import { FaHtml5 } from "react-icons/fa";
 export const technicalSkills = [
   {
   skill: "Html",
-  skillPercentage: "95%",
+  skillPercentage: "100%",
   },
   {
     skill: "CSS",
-    skillPercentage:"75%",
+    skillPercentage:"85%",
+  },
+  {
+    skill:"JavaScript",
+    skillPercentage:"80%"
   },
 {
     skill: "Reactjs",
     skillPercentage:"70%",
+  },
+  {
+    skill: "Java",
+    skillPercentage:"55%"
 }]
 
 export const softSkills= ["Team Work","Public Speaking","Collaboration"]

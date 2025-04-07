@@ -1,7 +1,13 @@
 import React from 'react';
-import { FaTools, FaLightbulb, FaHtml5 } from 'react-icons/fa';
+import {
+  FaTools,
+  FaLightbulb,
+  FaHtml5,
+  FaHandPointRight,
+} from 'react-icons/fa';
 import { technicalSkills, softSkills } from './utils/skills';
 import './skills.css';
+import { FaStairs } from 'react-icons/fa6';
 const Skills = () => {
   return (
     <div className="skills-section">
@@ -15,10 +21,11 @@ const Skills = () => {
             <h3>Technical Skills</h3>
           </div>
           <div className="skills-list">
-            {technicalSkills.map(({ skill, skillIcon, skillPercentage }) => (
+            {technicalSkills.map(({ skill, skillPercentage }) => (
               <div className="skill">
                 <div>
                   <span>{skill}</span>
+                  <span>{skillPercentage}</span>
                 </div>
                 <div className="whole-bar">
                   <div
@@ -37,7 +44,12 @@ const Skills = () => {
           </div>
           <div className="skills-list">
             {softSkills.map((skill) => (
-              <div>{skill}</div>
+              <div>
+                <span>
+                  <FaHandPointRight />
+                </span>
+                {skill}
+              </div>
             ))}
           </div>
         </div>
