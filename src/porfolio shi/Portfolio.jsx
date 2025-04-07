@@ -6,6 +6,7 @@ import { GoMoveToTop } from 'react-icons/go';
 import './styles.css';
 import './hamburger.css';
 import Skills from './Skills';
+import Projects from './Projects';
 const Portfolio = () => {
   const [showButton, setShowButton] = useState(false);
   useEffect(() => {
@@ -43,6 +44,7 @@ const Portfolio = () => {
           </a>
         </button>
       )}
+      <Projects />
     </div>
   );
 };
