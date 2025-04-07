@@ -32,7 +32,7 @@ const Header = ({ active, setActive }) => {
           <li>
             <a
               style={active ? { color: 'black' } : { color: 'white' }}
-              href="#"
+              href="#skills"
             >
               Skills
             </a>
@@ -40,7 +40,7 @@ const Header = ({ active, setActive }) => {
           <li>
             <a
               style={active ? { color: 'black' } : { color: 'white' }}
-              href="#"
+              href="#projects"
             >
               Projects
             </a>
@@ -48,7 +48,7 @@ const Header = ({ active, setActive }) => {
           <li>
             <a
               style={active ? { color: 'black' } : { color: 'white' }}
-              href="#"
+              href="#contact"
             >
               Contact
             </a>

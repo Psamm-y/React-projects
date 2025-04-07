@@ -10,7 +10,7 @@ import './skills.css';
 import { FaStairs } from 'react-icons/fa6';
 const Skills = () => {
   return (
-    <div className="skills-section">
+    <div className="skills-section" id="skills">
       <div className="section-head">
         <h2>Skills</h2>
       </div>

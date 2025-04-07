@@ -15,3 +15,14 @@ html {
 body {
   padding-top: 5em;
 }
+.move-to-top {
+  text-decoration: none;
+  color: inherit;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  background-color: var(--third-color);
+}
+.portfolio {
+  position: relative;
+}
