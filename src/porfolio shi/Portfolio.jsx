@@ -12,6 +12,20 @@ const Portfolio = () => {
     document.title = 'Psammy Porfolio';
   }, []);
 
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener(scroll, handleScroll);
+    };
+  }, []);
   const [active, setActive] = useState(false);
   return (
     <div className="portfolio">

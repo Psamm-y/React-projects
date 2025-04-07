@@ -16,12 +16,14 @@ body {
   padding-top: 5em;
 }
 .move-to-top {
-  text-decoration: none;
-  color: inherit;
   position: fixed;
   bottom: 2em;
   right: 2em;
   background-color: var(--third-color);
+}
+.move-to-top a {
+  text-decoration: none;
+  color: inherit;
 }
 .portfolio {
   position: relative;

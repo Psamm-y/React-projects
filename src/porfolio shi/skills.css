@@ -47,7 +47,7 @@
 .whole-bar {
   position: relative;
   height: 0.4em;
-  width: 10em;
+  width: 100%;
   background-color: var(--secondary-color);
   border-radius: 0.2em;
 }
@@ -75,6 +75,9 @@
 }
 .soft .skills-list span {
   color: black;
+}
+.skill {
+  margin-bottom: 1em;
 }
 @media only screen and (max-width: 760px) {
   .skills-grid {

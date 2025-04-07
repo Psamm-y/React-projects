@@ -23,4 +23,4 @@ export const technicalSkills = [
     skillPercentage:"55%"
 }]
 
-export const softSkills= ["Team Work","Public Speaking","Collaboration"]
+export const softSkills= ["Problem solving","Team work","Public speaking","Collaboration","Critical thinking","Creativity"]

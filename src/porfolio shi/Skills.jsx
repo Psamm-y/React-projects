@@ -8,6 +8,7 @@ import {
 import { technicalSkills, softSkills } from './utils/skills';
 import './skills.css';
 import { FaStairs } from 'react-icons/fa6';
+import { IoIosSettings } from 'react-icons/io';
 const Skills = () => {
   return (
     <div className="skills-section" id="skills">
@@ -39,7 +40,7 @@ const Skills = () => {
         </div>
         <div className="soft">
           <div className="soft-header">
-            <FaStairs className="icon" />
+            <IoIosSettings className="icon" />
             <h3>Soft skills</h3>
           </div>
           <div className="skills-list">

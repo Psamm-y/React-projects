@@ -5,7 +5,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { FaGithub } from 'react-icons/fa';
 import './home.css';
 import './styles.css';
-import { GoMoveToTop } from 'react-icons/go';
+
 const Home = () => {
   return (
     <>
@@ -46,15 +46,10 @@ const Home = () => {
             </div>
           </div>
           <div className="image">
-            <img src={Matriculation} alt="" />
+            <img src={Matriculation} alt="my image" />
           </div>
         </section>
       </main>
-      <div className="move-to-top">
-        <a href="#">
-          <GoMoveToTop />
-        </a>
-      </div>
     </>
   );
 };
