@@ -1,18 +1,41 @@
 .about-section {
+  background-size: cover;
   margin-top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
   scroll-margin-top: 5em;
   margin-bottom: 3rem;
+  padding: 2em;
 }
 .section-head {
+  position: relative;
   display: flex;
   justify-content: center;
   font-size: 2em;
   align-items: center;
+  color: white;
 }
-
+.section-head::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.7em;
+  height: 0.1em;
+  background-color: gold;
+  animation: underline 4s infinite ease-in-out;
+}
+@keyframes underline {
+  0% {
+    right: 90%;
+  }
+  50% {
+    right: 50%;
+  }
+  100% {
+    right: 0%;
+  }
+}
 .accordion-header {
   display: flex;
   justify-content: space-between;
@@ -44,7 +67,7 @@
 }
 .accordion-content {
   width: 80%;
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-top: 1em;
   transition: 1s ease;
 }
@@ -61,22 +84,27 @@
 }
 .about-image {
   position: relative;
+  height: fit-content;
+  z-index: 10;
 }
-.square {
+
+.about-image::before {
+  content: '';
   border: 13px solid var(--primary-color);
   height: 20em;
   position: absolute;
   width: 368px;
-  top: 4em;
+  top: 3em;
   left: -4em;
-  z-index: -2;
+  z-index: -1;
 }
 .main-about .header h3 {
   font-size: 1.5em;
-  color: var(--fourth-color);
+  color: var(--third-color);
 }
 .main-about .header p {
   font-size: 1.2em;
+  color: white;
 }
 .about-section .icon {
   font-size: 1em;
@@ -86,23 +114,29 @@
 .more-info p:nth-child(5) .icon {
   font-size: 1.1em;
 }
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1em;
+}
 .info-section .more-info p {
   display: flex;
   align-items: center;
 }
 
 .more-info p {
-  color: #000000;
+  color: white;
 }
 .more-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 2em;
   height: 50%;
+  color: white;
 }
 .more-info p span {
-  color: black;
+  color: var(--third-color);
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -114,11 +148,15 @@
     width: 100%;
   }
   .main-about {
+    margin-top: 4em;
     grid-template-columns: 1fr;
     margin-bottom: 1rem;
   }
 
   .about-image {
     margin-bottom: 3em;
+  }
+  .about-section {
+    justify-content: center;
   }
 }
