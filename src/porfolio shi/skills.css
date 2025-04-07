@@ -81,4 +81,7 @@
     grid-template-columns: 1fr;
     gap: 2em;
   }
+  .skills-grid::before {
+    display: none;
+  }
 }
