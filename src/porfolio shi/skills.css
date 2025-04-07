@@ -1,13 +1,25 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24em;
+  gap: 12em;
+  position: relative;
+}
+.skills-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  background-color: gold;
 }
 .skills-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3em;
 }
 .technical,
 .soft {
@@ -53,10 +65,14 @@
 .soft .skills-list div {
   color: white;
   display: flex;
-
-  justify-content: space-between;
+  margin-left: 0.8em;
 }
 
+.soft .skills-list div span {
+  display: flex;
+  align-items: center;
+  margin-right: 0.8em;
+}
 .soft .skills-list span {
   color: black;
 }

@@ -39,7 +39,7 @@ const Skills = () => {
         </div>
         <div className="soft">
           <div className="soft-header">
-            <FaLightbulb className="icon" />
+            <FaStairs className="icon" />
             <h3>Soft skills</h3>
           </div>
           <div className="skills-list">
