@@ -25,7 +25,6 @@
 .soft {
   align-items: center;
   justify-content: center;
-  border: 1px solid #0000;
 }
 .soft .icon,
 .technical .icon {
