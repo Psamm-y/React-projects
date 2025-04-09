@@ -76,11 +76,7 @@ main {
   text-decoration: none;
   color: inherit;
 }
-.move-to-top {
-  position: absolute;
-  bottom: 0;
-  background-color: red;
-}
+
 @media only screen and (max-width: 760px) {
   .homepage {
     padding-top: 2em;
