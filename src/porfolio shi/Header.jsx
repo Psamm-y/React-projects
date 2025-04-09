@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './header.css';
 import './styles.css';
 import { FaSun, FaMoon } from 'react-icons/fa';
@@ -8,6 +8,7 @@ const Header = ({ active, setActive }) => {
     e.preventDefault();
     setTimeout(() => setActive(!active), 100);
   };
+
   return (
     <header className={active ? 'light ' : 'dark'}>
       <div className={active ? 'lightName ' : 'darkName'}>Samuel Ampadu.</div>
@@ -21,6 +22,7 @@ const Header = ({ active, setActive }) => {
               Home
             </a>
           </li>
+          <li style={active ? { color: 'black' } : { color: 'white' }}>|</li>
           <li>
             <a
               style={active ? { color: 'black' } : { color: 'white' }}
@@ -29,6 +31,7 @@ const Header = ({ active, setActive }) => {
               About
             </a>
           </li>
+          <li style={active ? { color: 'black' } : { color: 'white' }}>|</li>
           <li>
             <a
               style={active ? { color: 'black' } : { color: 'white' }}
@@ -37,6 +40,7 @@ const Header = ({ active, setActive }) => {
               Skills
             </a>
           </li>
+          <li style={active ? { color: 'black' } : { color: 'white' }}>|</li>
           <li>
             <a
               style={active ? { color: 'black' } : { color: 'white' }}
@@ -45,6 +49,7 @@ const Header = ({ active, setActive }) => {
               Projects
             </a>
           </li>
+          <li style={active ? { color: 'black' } : { color: 'white' }}>|</li>
           <li>
             <a
               style={active ? { color: 'black' } : { color: 'white' }}
@@ -62,7 +67,7 @@ const Header = ({ active, setActive }) => {
       >
         {active ? <FaMoon /> : <FaSun />}
       </div>
-      <div>
+      <div className="ham-container">
         <Hamburger />
       </div>
     </header>
