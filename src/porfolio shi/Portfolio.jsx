@@ -14,7 +14,7 @@ const Portfolio = () => {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 1000) {
       setShowButton(true);
     } else {
       setShowButton(false);

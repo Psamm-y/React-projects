@@ -47,9 +47,9 @@ nav ul li:nth-child(9)::before {
   position: absolute;
   left: 0;
   right: 0.1em;
-  background-color: var(--primary-color);
+  background: linear-gradient(to right, rgb(255, 231, 96), gold);
   display: none;
-  animation: underline 0.5s ease-out;
+  animation: underline 0.2s;
 }
 nav ul li:hover::before {
   display: block;

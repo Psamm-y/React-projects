@@ -57,7 +57,7 @@
 }
 .percent {
   position: absolute;
-  background-color: var(--primary-color);
+  background: linear-gradient(to right, #5cb3ff, #0580ec, #006dcd);
   height: 100%;
   border-radius: inherit;
 }
@@ -73,7 +73,7 @@
   margin-right: 0.8em;
 }
 .soft .skills-list span {
-  color: black;
+  color: var(--third-color);
 }
 .skill {
   margin-bottom: 1em;

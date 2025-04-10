@@ -21,8 +21,8 @@ body {
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 2em;
-  right: 2em;
+  bottom: 1em;
+  right: 1em;
   background-color: var(--third-color);
   padding: 2em;
   width: 2em;
@@ -30,6 +30,7 @@ body {
   border-radius: 2em;
   border: none;
   animation: jump 2s infinite;
+  z-index: 200;
 }
 @keyframes jump {
   0% {

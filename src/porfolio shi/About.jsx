@@ -25,9 +25,9 @@ const About = () => {
           <div className="more-info">
             <p>
               <span>
-                <FaCalendar className="icon" /> Birthday:
+                <FaCalendar className="icon" /> DOB:
               </span>
-              &nbsp; 11th August, 2005
+              11th August, 2005
             </p>
             <p>
               <span>
