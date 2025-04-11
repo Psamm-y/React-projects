@@ -4,7 +4,7 @@ import { FaHtml5 } from "react-icons/fa";
 export const technicalSkills = [
   {
   skill: "Html",
-  skillPercentage: "100%",
+  skillPercentage: "98%",
   },
   {
     skill: "CSS",

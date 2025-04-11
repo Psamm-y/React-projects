@@ -1,0 +1,117 @@
+.projects-section {
+  background: #001e385f;
+  padding: 2em;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 20em;
+  height: 20em;
+  transition: 0.5s ease;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.project-card:hover {
+  box-shadow: 0px 10px 35px #000000a3;
+  transform: scale(1.03);
+}
+.project-image {
+  position: relative;
+  background: url(../assets/lines.jpeg);
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+  border: 1px solid #0580ec;
+}
+.project-image::before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    #00000000,
+    rgba(0, 0, 0, 0.518),
+    rgba(0, 0, 0, 0.631)
+  );
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/* .project-image div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+.project-image div button {
+  color: var(--third-color);
+  background-color: #b6cde0;
+  border: none;
+  border-radius: 1em;
+  padding: 0.5em;
+  width: max-content;
+  position: absolute;
+  bottom: 4em;
+  left: 1em;
+  font-size: 0.6em;
+  margin-bottom: 1em;
+}
+.project-image div div {
+  font-size: 2em;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0em;
+  left: 0.4em;
+
+  letter-spacing: 0;
+}
+.project-image img {
+  background-size: cover;
+  width: 20em;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+}
+.project-content {
+  position: relative;
+  background-color: #ffffff;
+  padding: 1em;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+.project-content .description {
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+.tools {
+  width: 100%;
+  margin-top: 0.5em;
+}
+.tools button {
+  font-size: 0.7em;
+  padding: 0.3em;
+  background-color: rgb(235, 235, 235);
+  border: 1px solid #80808080;
+  color: #000000;
+  margin-right: 5px;
+}
+.project-content div:nth-child(3) div {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+.project-content div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

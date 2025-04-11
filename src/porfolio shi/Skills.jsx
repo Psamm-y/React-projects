@@ -1,13 +1,7 @@
 import React from 'react';
-import {
-  FaTools,
-  FaLightbulb,
-  FaHtml5,
-  FaHandPointRight,
-} from 'react-icons/fa';
+import { FaTools, FaHandPointRight } from 'react-icons/fa';
 import { technicalSkills, softSkills } from './utils/skills';
 import './skills.css';
-import { FaStairs } from 'react-icons/fa6';
 import { IoIosSettings } from 'react-icons/io';
 const Skills = () => {
   return (

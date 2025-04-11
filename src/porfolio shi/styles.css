@@ -14,7 +14,7 @@ html {
   background: linear-gradient(to right bottom, #9cd1ff, #091223);
 }
 body {
-  padding-top: 5em;
+  padding: 5em 0;
 }
 .move-to-top {
   display: flex;
@@ -34,13 +34,13 @@ body {
 }
 @keyframes jump {
   0% {
-    margin-bottom: 0;
+    margin-top: 0;
   }
   50% {
-    margin-bottom: 0.5em;
+    margin-top: 0.5em;
   }
   100% {
-    margin-top: 0.5em;
+    margin-top: 0em;
   }
 }
 .move-to-top a {
@@ -61,4 +61,7 @@ body {
   100% {
     right: 0%;
   }
+}
+.deployed {
+  color: #0580ec;
 }
