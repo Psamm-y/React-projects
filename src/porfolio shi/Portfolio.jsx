@@ -22,7 +22,7 @@ const Portfolio = () => {
   };
 
   const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: smooth });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -38,7 +38,7 @@ const Portfolio = () => {
       <About />
       <Skills />
       {showButton && (
-        <button className="move-to-top">
+        <button className="move-to-top" onClick={() => handleClick}>
           <a href="#">
             <GoMoveToTop />
           </a>

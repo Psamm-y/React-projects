@@ -33,25 +33,25 @@ const About = () => {
               <span>
                 <FaLocationDot className="icon" /> Location:
               </span>
-              &nbsp; Ofankor Barrier, Accra: Ghana
+              Ofankor Barrier, Accra: Ghana
             </p>
             <p>
               <span>
                 <FaPhone className="icon" /> Phone:
               </span>
-              &nbsp;+233 537 522 104
+              +233 537 522 104
             </p>
             <p>
               <span>
                 <MdEmail className="icon" /> Email:
               </span>
-              &nbsp;ampadupsamuel1@gmail.com
+              ampadupsamuel1@gmail.com
             </p>
             <p>
               <span>
                 <FaGraduationCap className="icon" /> School:
               </span>
-              &nbsp; University of Ghana
+              University of Ghana
             </p>
           </div>
         </div>

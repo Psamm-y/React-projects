@@ -12,7 +12,7 @@
   grid-template-columns: 1fr;
   width: 20em;
   height: 20em;
-  transition: 0.5s ease;
+  transition: 0.2s ease;
   border-radius: 0.5em;
   cursor: pointer;
 }
@@ -43,11 +43,7 @@
   right: 0;
   left: 0;
 }
-/* .project-image div {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-} */
+
 .project-image div button {
   color: var(--third-color);
   background-color: #b6cde0;
@@ -71,8 +67,9 @@
   letter-spacing: 0;
 }
 .project-image img {
-  background-size: cover;
-  width: 20em;
+  object-fit: cover;
+  width: 100%;
+  height: 10em;
   border-top-right-radius: 0.5em;
   border-top-left-radius: 0.5em;
 }
@@ -114,4 +111,10 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+@media (max-width: 786px) {
+  .projects {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
 }

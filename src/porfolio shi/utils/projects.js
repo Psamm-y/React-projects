@@ -10,7 +10,7 @@ export const projects = [
     link: "https://github.com/Psamm-y/Todo-list-app"
   },
   {
-    title: "Calculator",
+    title: "Simple Calculator",
     category: "web App",
     language: ["Reactjs","CSS"],
     description:"A simple calculator but unlike every other, on the web."
