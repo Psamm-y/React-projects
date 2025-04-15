@@ -40,11 +40,13 @@ const Projects = () => {
                       </a>
                     </span>
                   </div>
-                  <span className="deployed">
-                    <a href="">
-                      <FaExternalLinkAlt />
-                    </a>
-                  </span>
+                  {link && (
+                    <span className="deployed">
+                      <a href={link} target="_blank">
+                        <FaExternalLinkAlt />
+                      </a>
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
