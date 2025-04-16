@@ -7,6 +7,7 @@ import './styles.css';
 import './hamburger.css';
 import Skills from './Skills';
 import Projects from './Projects';
+import Contact from './Contact';
 const Portfolio = () => {
   const [showButton, setShowButton] = useState(false);
   useEffect(() => {
@@ -45,6 +46,7 @@ const Portfolio = () => {
         </button>
       )}
       <Projects />
+      <Contact />
     </div>
   );
 };

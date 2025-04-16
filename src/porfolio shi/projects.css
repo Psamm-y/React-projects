@@ -1,23 +1,25 @@
 .projects-section {
   background: #001e385f;
   padding: 2em 10em;
+  scroll-margin-top: 5em;
 }
 .projects {
+  place-items: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2em;
+  gap: 0.5em;
 }
 .project-card {
   display: grid;
   grid-template-columns: 1fr;
-  width: 20em;
-  height: 20em;
+  width: 18em;
+  height: 18em;
   transition: 0.2s ease;
   border-radius: 0.5em;
   cursor: pointer;
 }
 .project-card:hover {
-  box-shadow: 0px 10px 35px #000000a3;
+  box-shadow: 0px 15px 15px #000000a4;
   transform: scale(0.99);
 }
 .project-image {
@@ -43,26 +45,28 @@
   right: 0;
   left: 0;
 }
-
+.overlay {
+  position: absolute;
+  width: max-content;
+  bottom: 0em;
+  left: 0.5em;
+}
 .project-image div button {
   color: var(--third-color);
   background-color: #b6cde0;
   border: none;
   border-radius: 1em;
   padding: 0.5em;
-  width: max-content;
-  position: absolute;
-  bottom: 4em;
-  left: 1em;
+
   font-size: 0.6em;
   margin-bottom: 1em;
 }
 .project-image div div {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #ffffff;
-  position: absolute;
-  bottom: 0em;
-  left: 0.4em;
+
+  /* bottom: 0em;
+  left: 0.4em; */
 
   letter-spacing: 0;
 }

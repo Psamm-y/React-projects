@@ -1,11 +1,10 @@
 import React from 'react';
 import { projects } from './utils/projects';
-import todoImage from '../assets/todo(2).png';
 import './projects.css';
 import { FaExternalLinkAlt, FaGithub, FaLink } from 'react-icons/fa';
 const Projects = () => {
   return (
-    <div className="projects-section">
+    <div id="projects" className="projects-section">
       <div className="section-head">
         <h2>Projects</h2>
       </div>
@@ -15,7 +14,7 @@ const Projects = () => {
             <div key={title} className="project-card">
               <div className="project-image">
                 <img src={image} alt="project-image" />
-                <div>
+                <div className="overlay">
                   <button className="category">{category}</button>
                   <div className="project-title">{title} </div>
                 </div>
