@@ -14,13 +14,13 @@
   grid-template-columns: 1fr;
   width: 18em;
   height: 18em;
-  transition: 0.2s ease;
+  transition: 0.5s ease;
   border-radius: 0.5em;
   cursor: pointer;
 }
 .project-card:hover {
-  box-shadow: 0px 15px 15px #000000a4;
-  transform: scale(0.99);
+  box-shadow: 0px 10px 15px #000000;
+  /* transform: scale(0.99); */
 }
 .project-image {
   position: relative;
@@ -40,7 +40,7 @@
     rgba(0, 0, 0, 0.518),
     rgba(0, 0, 0, 0.631)
   );
-  top: 0;
+  top: 5em;
   bottom: 0;
   right: 0;
   left: 0;
@@ -121,5 +121,8 @@ a {
   .projects {
     grid-template-columns: 1fr;
     place-items: center;
+  }
+  .projects-section {
+    padding: 2em;
   }
 }

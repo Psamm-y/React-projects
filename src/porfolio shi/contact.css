@@ -1,0 +1,73 @@
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+.contact-info div p:nth-child(1) {
+  font-size: 0.8em;
+  color: rgb(194, 194, 194);
+}
+.contact-info div p:nth-child(2) {
+  font-size: 0.9em;
+}
+.contact-info span {
+  font-size: 1em;
+  display: flex;
+  margin-right: 0.5em;
+  background-color: #0580ec;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+.right input {
+  padding: 0.5em;
+  outline: none;
+}
+.right form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.right form textarea {
+  grid-column: span 2;
+  grid-row: span 2;
+  padding: 0.5em;
+  outline: none;
+}
+.right form button {
+  grid-column-start: 2;
+  background-color: gold;
+  height: 2em;
+  width: 8em;
+  border: none;
+  border-radius: 0.2em;
+  justify-self: end;
+}
+.contact-sec {
+  padding: 3em;
+}
+.get-in-touch-sec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #002647;
+  position: relative;
+  padding: 5em;
+}
+.get-in-touch-sec::before {
+  content: '';
+  background-color: gold;
+  position: absolute;
+  top: 4em;
+  bottom: 1em;
+  left: 33%;
+  width: 1px;
+  transform: translateX(-50%);
+}
+.right {
+  grid-column: span 2;
+  place-items: left;
+}
+.left {
+  place-items: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

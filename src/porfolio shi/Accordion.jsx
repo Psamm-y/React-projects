@@ -11,7 +11,7 @@ const Accordion = ({ title, essay }) => {
         <div className="title">{title}</div>
         <span>{expand ? <FaChevronCircleUp /> : <FaChevronCircleDown />}</span>
       </div>
-      <div className="accordion-content">{expand ? essay : ''}</div>
+      <div className="accordion-content">{expand && essay}</div>
     </>
   );
 };
