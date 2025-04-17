@@ -49,6 +49,7 @@
   color: white;
   padding: 1em;
   margin-bottom: 0.5em;
+  animation: appear 2s;
 }
 .accordion-header span {
   color: var(--third-color);

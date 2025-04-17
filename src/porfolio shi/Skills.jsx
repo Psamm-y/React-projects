@@ -3,6 +3,7 @@ import { FaTools, FaHandPointRight } from 'react-icons/fa';
 import { technicalSkills, softSkills } from './utils/skills';
 import './skills.css';
 import { IoIosSettings } from 'react-icons/io';
+import { v4 as uuidv4 } from 'uuid';
 const Skills = () => {
   return (
     <div className="skills-section" id="skills">
@@ -17,7 +18,7 @@ const Skills = () => {
           </div>
           <div className="skills-list">
             {technicalSkills.map(({ skill, skillPercentage }) => (
-              <div className="skill">
+              <div key={uuidv4()} className="skill">
                 <div>
                   <span>{skill}</span>
                   <span>{skillPercentage}</span>
@@ -39,7 +40,7 @@ const Skills = () => {
           </div>
           <div className="skills-list">
             {softSkills.map((skill) => (
-              <div>
+              <div key={uuidv4()}>
                 <span>
                   <FaHandPointRight />
                 </span>

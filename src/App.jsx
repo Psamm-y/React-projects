@@ -1,5 +1,5 @@
 import React, { useId } from 'react';
-
+import Form from './Form validation/Form.jsx';
 const App = () => {
   const id = useId();
   return (
@@ -9,6 +9,7 @@ const App = () => {
           <Accordion title={title} content={content} />
         ))}
       </div> */}
+      <Form />
     </>
   );
 };

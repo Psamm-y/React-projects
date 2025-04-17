@@ -43,8 +43,9 @@
   border: none;
   border-radius: 0.2em;
   justify-self: end;
+  transition: 0.5s;
 }
-.right form button:hover {
+.right form button:active {
   background-color: #dcbb00;
 }
 .contact-sec {
@@ -102,7 +103,5 @@
   .right form {
     display: flex;
     flex-direction: column;
-  }
-  .right form textarea {
   }
 }

@@ -39,10 +39,8 @@ const Portfolio = () => {
       <About />
       <Skills />
       {showButton && (
-        <button className="move-to-top" onClick={() => handleClick}>
-          <a href="#">
-            <GoMoveToTop />
-          </a>
+        <button className="move-to-top" onClick={() => handleClick()}>
+          <GoMoveToTop className="icon" />
         </button>
       )}
       <Projects />
