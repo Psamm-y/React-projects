@@ -1,0 +1,10 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer {
+  padding: 1em;
+}
+.socials {
+  grid-column: span 2;
+}

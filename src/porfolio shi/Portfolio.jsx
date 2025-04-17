@@ -8,6 +8,7 @@ import './hamburger.css';
 import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
+import Footer from './Footer';
 const Portfolio = () => {
   // const [showButton, setShowButton] = useState(false);
   const buttonRef = useRef('');
@@ -54,6 +55,7 @@ const Portfolio = () => {
 
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 };
