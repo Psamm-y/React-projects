@@ -49,8 +49,11 @@
   color: white;
   padding: 1em;
   margin-bottom: 0.5em;
-  animation: appear 2s;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
+
 .accordion-header span {
   color: var(--third-color);
   font-size: 1.2em;

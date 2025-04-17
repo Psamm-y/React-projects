@@ -17,6 +17,7 @@ body {
   padding: 5em 0;
 }
 .move-to-top {
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,12 +26,16 @@ body {
   right: 1em;
   background-color: var(--third-color);
   padding: 2em;
-  width: 2em;
-  height: 2em;
+  width: 1em;
+  height: 1em;
   border-radius: 2em;
   border: none;
   animation: jump 2s infinite;
   z-index: 200;
+  transition: 0.5s;
+}
+.move-to-top.show {
+  opacity: 1;
 }
 @keyframes jump {
   0% {
@@ -43,7 +48,7 @@ body {
     margin-top: 0em;
   }
 }
-.move-to-top a {
+.move-to-top span {
   text-decoration: none;
   font-size: 2em;
   color: inherit;
@@ -73,5 +78,10 @@ body {
   to {
     opacity: 1;
     scale: 1;
+  }
+}
+@keyframes run {
+  from {
+    width: 0;
   }
 }

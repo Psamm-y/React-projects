@@ -61,6 +61,8 @@
   background: linear-gradient(to right, #5cb3ff, #0580ec, #006dcd);
   height: 100%;
   border-radius: inherit;
+  animation: run 2s ease-in-out;
+  animation-timeline: view();
 }
 .soft .skills-list div {
   color: white;
