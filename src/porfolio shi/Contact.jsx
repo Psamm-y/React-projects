@@ -5,13 +5,13 @@ import { MdMail } from 'react-icons/md';
 import { FaLocationDot, FaMapLocation } from 'react-icons/fa6';
 const Contact = () => {
   return (
-    <div className="contact-sec" style={{ color: 'white' }}>
+    <div id="contact" className="contact-sec" style={{ color: 'white' }}>
       <div className="section-head">
         <h2>Get In Touch</h2>
       </div>
       <div className="get-in-touch-sec">
         <div className="left">
-          <p>Let's Build Something Amazing</p>
+          <p className="msg">Let's Build Something Amazing</p>
           <div className="contact-info">
             <span>
               <FaPhone />
@@ -41,7 +41,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="right">
-          <p>Send me a Message</p>
+          <p className="msg">Send me a Message</p>
           <form action="">
             <input type="text" placeholder="Full Name*" required />
             <input type="text" placeholder="Company Name" />

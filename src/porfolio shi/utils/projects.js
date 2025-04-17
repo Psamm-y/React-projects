@@ -8,7 +8,7 @@ export const projects = [
     language: ["Reactjs","CSS","JavaScript","Netlify"],
     description: "A user friendly and easy to use responsive webapp for managing tasks",
     githubRepos:"https://github.com/Psamm-y/Todo-list-app",
-    link:"psammy-todos.netlify.app" 
+    link:"https://psammy-todos.netlify.app/" 
   },
   {
     title: "Simple Calculator",

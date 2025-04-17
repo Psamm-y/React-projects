@@ -28,9 +28,12 @@
 }
 .right form textarea {
   grid-column: span 2;
-  grid-row: span 2;
+
   padding: 0.5em;
   outline: none;
+  resize: vertical;
+  min-height: 5em;
+  max-height: 8em;
 }
 .right form button {
   grid-column-start: 2;
@@ -41,7 +44,11 @@
   border-radius: 0.2em;
   justify-self: end;
 }
+.right form button:hover {
+  background-color: #dcbb00;
+}
 .contact-sec {
+  scroll-padding-top: 5em;
   padding: 3em;
 }
 .get-in-touch-sec {
@@ -56,7 +63,7 @@
   background-color: gold;
   position: absolute;
   top: 4em;
-  bottom: 1em;
+  bottom: 4em;
   left: 33%;
   width: 1px;
   transform: translateX(-50%);
@@ -70,4 +77,32 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.msg {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  .get-in-touch-sec::before {
+    display: none;
+  }
+  .get-in-touch-sec {
+    grid-template-columns: 1fr;
+    gap: 2em;
+    padding: 2em;
+  }
+  .contact-info {
+    margin-bottom: 1em;
+  }
+  .contact-sec {
+    padding: 3em 0em;
+  }
+}
+@media (max-width: 630px) {
+  .right form {
+    display: flex;
+    flex-direction: column;
+  }
+  .right form textarea {
+  }
 }
