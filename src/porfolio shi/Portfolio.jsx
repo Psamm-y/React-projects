@@ -13,7 +13,7 @@ const Portfolio = () => {
   // const [showButton, setShowButton] = useState(false);
   const buttonRef = useRef('');
   useEffect(() => {
-    document.title = 'Psammy Porfolio';
+    document.title = "Psammy | Let's build something amazing";
   }, []);
 
   const handleClick = () => {

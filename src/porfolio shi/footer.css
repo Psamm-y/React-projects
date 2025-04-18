@@ -64,7 +64,7 @@ footer {
   white-space: normal;
 }
 .footer hr {
-  height: 2px;
+  height: 1px;
   border: none;
   background-color: grey;
   width: 100%;
@@ -103,6 +103,7 @@ footer {
     margin-bottom: 0.5em;
   }
   .footer hr {
+    margin: 1em 0;
     grid-column: span 2;
   }
   .last {
@@ -111,5 +112,18 @@ footer {
   }
   .contact-info div {
     white-space: wrap;
+  }
+}
+@media (max-width: 400px) {
+  .footer {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+  footer {
+    height: 45em;
+  }
+  .socials,
+  .footer hr,
+  .last {
+    grid-column: span 1;
   }
 }
