@@ -14,7 +14,7 @@ html {
   background: linear-gradient(to right bottom, #9cd1ff, #091223);
 }
 body {
-  padding: 5em 0;
+  padding: 5em 0 0 0;
 }
 .move-to-top {
   opacity: 0;

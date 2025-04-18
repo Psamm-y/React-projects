@@ -1,10 +1,79 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  background-color: #002647e1;
+  width: 100%;
+  padding: 1em;
+  padding-top: 3em;
+  min-height: 18em;
+  height: 20em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
 }
 footer {
-  padding: 1em;
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
+  min-height: 18em;
+  z-index: -26;
+  height: 20em;
+  /* background: url(../assets/forest.jpeg); */
+  background-size: cover;
 }
 .socials {
+  height: 60%;
   grid-column: span 2;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.socials div h1 {
+  color: var(--third-color);
+}
+.socials div p {
+  color: #ffffff;
+  width: 60%;
+  font-size: 0.9em;
+}
+.socials .social-links {
+  margin-top: 3em;
+}
+.socials .social-links a {
+  font-size: 2em;
+}
+.sitemap p {
+  color: #ffffff;
+}
+.sitemap {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.contact .contact-info {
+  margin-bottom: 0em;
+  font-size: 1.2em;
+}
+.contact .contact-info div p {
+  color: #ffffff;
+}
+@media (max-width: 762px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 2em;
+    height: 40em;
+  }
+  footer {
+    height: 40em;
+  }
+  .socials {
+    grid-column: span 1;
+  }
+  .sitemap p {
+    margin-bottom: 0.5em;
+  }
 }

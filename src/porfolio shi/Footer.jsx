@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer">
         <div className="socials">
           <div>
-            Samuel Ampadu.
+            <h1>Samuel Ampadu.</h1>
             <p>
               Showcase of my work,skills and projects. Crafting digital
               experiences that matter.
@@ -39,12 +39,30 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        <div className="sitemap">
+          <h3>Sitemap</h3>
+          <p>
+            <a href="#home">- Home</a>
+          </p>
+          <p>
+            <a href="#about">- My About</a>
+          </p>
+          <p>
+            <a href="#skills">- Skills section</a>
+          </p>
+          <p>
+            <a href="#projects">- Featured Projects</a>
+          </p>
+          <p>
+            <a href="#contact">- Contact section</a>
+          </p>
+        </div>
         <div className="contact">
           <h3>Contact info</h3>
           <div>
             <div className="contact-info">
               <span style={{ background: 'none' }}>
-                <FaPhone style={{ color: 'white' }} />
+                <FaPhone />
               </span>
               <div>
                 <p>(233)558 317 782</p>
@@ -52,14 +70,14 @@ const Footer = () => {
             </div>
             <div className="contact-info">
               <span style={{ background: 'none' }}>
-                <MdMail style={{ color: 'white' }} />
+                <MdMail />
               </span>
               <div>
                 <p>ampadupsamuel1@gmail.com</p>
               </div>
             </div>
             <div className="contact-info">
-              <span>
+              <span style={{ background: 'none' }}>
                 <FaLocationDot />
               </span>
               <div>
