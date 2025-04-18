@@ -1,6 +1,6 @@
 .footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1.5fr 1.5fr 1fr 1.5fr;
   background-color: #002647e1;
   width: 100%;
   padding: 1em;
@@ -55,7 +55,7 @@ footer {
   align-items: start;
 }
 .contact .contact-info {
-  margin-bottom: 0em;
+  margin-bottom: 0.5em;
   font-size: 1.2em;
   white-space: normal;
 }
@@ -73,15 +73,28 @@ footer {
 .last {
   grid-column: span 4;
   justify-self: center;
+  color: grey;
+}
+.contact-info div p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contact .contact-info div p {
+  color: #ffffff;
+  word-break: break-word; /* Allows breaking long words */
+  font-size: 0.9em; /* Slightly smaller font */
+  max-width: 100%; /* Prevent overflow */
 }
 @media (max-width: 762px) {
   .footer {
-    grid-template-columns: 1fr 1fr;
-    gap: 2em;
-    height: 48em;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1em;
+    height: auto;
+    padding-bottom: 1em;
   }
   footer {
-    height: 48em;
+    height: 32em;
   }
   .socials {
     grid-column: span 2;
@@ -95,5 +108,8 @@ footer {
   .last {
     grid-column: span 2;
     height: fit-content;
+  }
+  .contact-info div {
+    white-space: wrap;
   }
 }
