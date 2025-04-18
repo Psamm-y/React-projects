@@ -42,19 +42,19 @@ const Footer = () => {
         <div className="sitemap">
           <h3>Sitemap</h3>
           <p>
-            <a href="#home">- Home</a>
+            <a href="#home">Home</a>
           </p>
           <p>
-            <a href="#about">- My About</a>
+            <a href="#about">About</a>
           </p>
           <p>
-            <a href="#skills">- Skills section</a>
+            <a href="#skills">Skills</a>
           </p>
           <p>
-            <a href="#projects">- Featured Projects</a>
+            <a href="#projects">Projects</a>
           </p>
           <p>
-            <a href="#contact">- Contact section</a>
+            <a href="#contact">Contact</a>
           </p>
         </div>
         <div className="contact">
@@ -85,6 +85,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
+        <hr />
+        <div className="last">
+          &copy; 2025 My Portfolio. All rights Reserved.
         </div>
       </div>
     </footer>
