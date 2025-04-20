@@ -1,5 +1,5 @@
 import React from 'react';
-import { projects } from './utils/projects';
+import { languageStyles, projects } from './utils/projects';
 import './projects.css';
 import { FaExternalLinkAlt, FaGithub, FaLink } from 'react-icons/fa';
 const Projects = () => {
@@ -23,7 +23,9 @@ const Projects = () => {
                 <div className="description">{description}</div>
                 <div className="tools">
                   {language.map((language) => (
-                    <button key={language}>{language}</button>
+                    <button style={languageStyles[language]} key={language}>
+                      {language}
+                    </button>
                   ))}
                 </div>
                 <div>

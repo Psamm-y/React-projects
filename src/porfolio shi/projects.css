@@ -7,7 +7,7 @@
   place-items: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.5em;
+  gap: 1em;
 }
 .project-card {
   display: grid;
@@ -17,10 +17,9 @@
   transition: 0.2s ease;
   border-radius: 0.5em;
   cursor: pointer;
-  box-shadow: 0 5px 10px #bbdeff86;
 }
 .project-card:hover {
-  box-shadow: none;
+  box-shadow: 0 0px 50px #037aea86;
   /* transform: scale(0.99); */
 }
 .project-image {
