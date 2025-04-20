@@ -6,7 +6,7 @@
 .projects {
   place-items: center;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1em;
 }
 .project-card {
@@ -52,12 +52,9 @@
   left: 0.5em;
 }
 .project-image div button {
-  color: var(--third-color);
-  background-color: #b6cde0;
   border: none;
   border-radius: 1em;
   padding: 0.5em;
-
   font-size: 0.6em;
   margin-bottom: 1em;
 }

@@ -6,8 +6,9 @@ export const projects = [
      image:QH ,
     title: "QuickHomes",
     category: "Web App",
-    language: ["HTML", "CSS"],
-    description:"Front-end for an accomodation startup"
+    language: ["HTML", "CSS","JavaScript"],
+    description: "Front-end for an accomodation startup",
+    githubRepos:"https://github.com/Psamm-y/QuickHomes"
   },
   {
  image: todoImage,
@@ -24,6 +25,13 @@ export const projects = [
     language: ["Reactjs","CSS"],
     description: "A simple calculator but unlike every other, on the web.",
     githubRepos: "",
+  },
+  {
+    title: "Student Grade Tracker",
+    category: "Desktop App",
+    language: ["Java"],
+    description: "An application that allows users to add, remove, calculate student grades etc. ",
+    githubRepos:""
   }
 ];
 export const languageStyles = {
@@ -43,6 +51,18 @@ export const languageStyles = {
   },
   "Netlify": {
     color: "#3E9D9D"
+  },
+  "Java": {
+    color: "#007396"
   }
-  
+}
+export const buttonStyles = {
+  "Web App": {
+    color: "#0580ec",
+      backgroundColor: "#b6cde0"
+  },
+  "Desktop App": {
+    color: "#582800",
+    backgroundColor:"#e0a16d"
+  }
 }

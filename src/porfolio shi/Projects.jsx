@@ -1,5 +1,5 @@
 import React from 'react';
-import { languageStyles, projects } from './utils/projects';
+import { buttonStyles, languageStyles, projects } from './utils/projects';
 import './projects.css';
 import { FaExternalLinkAlt, FaGithub, FaLink } from 'react-icons/fa';
 const Projects = () => {
@@ -30,7 +30,9 @@ const Projects = () => {
               <div className="project-image">
                 <img src={image} alt="project-image" />
                 <div className="overlay">
-                  <button className="category">{category}</button>
+                  <button style={buttonStyles[category]} className="category">
+                    {category}
+                  </button>
                   <div className="project-title">{title} </div>
                 </div>
               </div>
