@@ -6,8 +6,8 @@
 .projects {
   place-items: center;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.5em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
 }
 .project-card {
   display: grid;
@@ -17,10 +17,9 @@
   transition: 0.2s ease;
   border-radius: 0.5em;
   cursor: pointer;
-  box-shadow: 0 5px 10px #bbdeff86;
 }
 .project-card:hover {
-  box-shadow: none;
+  box-shadow: 0 0px 50px #037aea86;
   /* transform: scale(0.99); */
 }
 .project-image {
@@ -28,8 +27,8 @@
   background: url(../assets/lines.jpeg);
   display: flex;
   justify-content: center;
-  border-top-right-radius: 0.5em;
-  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.6em;
+  border-top-left-radius: 0.6em;
   border: 1px solid #0580ec;
 }
 .project-image::before {
@@ -53,12 +52,9 @@
   left: 0.5em;
 }
 .project-image div button {
-  color: var(--third-color);
-  background-color: #b6cde0;
   border: none;
   border-radius: 1em;
   padding: 0.5em;
-
   font-size: 0.6em;
   margin-bottom: 1em;
 }
@@ -80,6 +76,7 @@
   border-top-left-radius: 0.5em;
 }
 .project-content {
+  min-height: 8em;
   position: relative;
   background-color: #ffffff;
   padding: 1em;
