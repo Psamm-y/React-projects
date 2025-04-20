@@ -20,6 +20,7 @@
 .right input {
   padding: 0.5em;
   outline: none;
+  caret-color: #0580ec;
 }
 .right form {
   display: grid;
@@ -28,7 +29,7 @@
 }
 .right form textarea {
   grid-column: span 2;
-
+  caret-color: #0580ec;
   padding: 0.5em;
   outline: none;
   resize: vertical;

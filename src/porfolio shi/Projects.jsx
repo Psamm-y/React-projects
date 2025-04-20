@@ -53,6 +53,7 @@ const Projects = () => {
                       </a>
                     </span>
                     <span
+                      style={{ cursor: 'copy' }}
                       onClick={() => copy(githubRepos)}
                       title="Copy github url"
                     >
