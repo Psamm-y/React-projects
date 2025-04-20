@@ -27,8 +27,8 @@
   background: url(../assets/lines.jpeg);
   display: flex;
   justify-content: center;
-  border-top-right-radius: 0.5em;
-  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.6em;
+  border-top-left-radius: 0.6em;
   border: 1px solid #0580ec;
 }
 .project-image::before {
@@ -79,6 +79,7 @@
   border-top-left-radius: 0.5em;
 }
 .project-content {
+  min-height: 8em;
   position: relative;
   background-color: #ffffff;
   padding: 1em;
