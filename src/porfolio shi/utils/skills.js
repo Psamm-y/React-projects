@@ -21,6 +21,13 @@ export const technicalSkills = [
   {
     skill: "Java",
     skillPercentage:"55%"
+  }, {
+    skill: "TailwindCSS",
+    skillPercentage:"80%"
+  },
+  {
+    skill: "Nextjs",
+  skillPercentage:"40%"
 }]
 
 export const softSkills= ["Problem solving","Team work","Public speaking","Collaboration","Critical thinking","Creativity"]

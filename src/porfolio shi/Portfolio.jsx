@@ -10,6 +10,17 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
 const Portfolio = () => {
+  const [observer, setObserver] = useState('');
+  useEffect(() => {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+        else entry.target.classList.remove('show');
+      });
+    });
+    setObserver(obs);
+  }, []);
+
   // const [showButton, setShowButton] = useState(false);
   const buttonRef = useRef('');
   useEffect(() => {
@@ -53,7 +64,7 @@ const Portfolio = () => {
         </span>
       </button>
 
-      <Projects />
+      <Projects observer={observer} />
       <Contact />
       <Footer />
     </div>

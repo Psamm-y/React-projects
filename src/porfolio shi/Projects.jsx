@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { buttonStyles, languageStyles, projects } from './utils/projects';
 import './projects.css';
 import { FaExternalLinkAlt, FaGithub, FaLink } from 'react-icons/fa';
 const Projects = () => {
+  //animation executes when in view
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+        else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((element) => observer.observe(element));
+  }, []);
+
   const copy = (text) => {
     navigator.clipboard
       .writeText(text)
@@ -25,8 +39,13 @@ const Projects = () => {
             link,
             category,
             githubRepos,
+            delay,
           }) => (
-            <div key={title} className="project-card">
+            <div
+              style={{ transitionDelay: delay }}
+              key={title}
+              className="project-card hidden"
+            >
               <div className="project-image">
                 <img src={image} alt="project-image" />
                 <div className="overlay">

@@ -8,7 +8,8 @@ export const projects = [
     category: "Web App",
     language: ["HTML", "CSS","JavaScript"],
     description: "Front-end for an accomodation startup",
-    githubRepos:"https://github.com/Psamm-y/QuickHomes"
+    githubRepos: "https://github.com/Psamm-y/QuickHomes",
+    delay:"200ms"
   },
   {
  image: todoImage,
@@ -17,7 +18,8 @@ export const projects = [
     language: ["Reactjs","CSS","JavaScript","Netlify"],
     description: "A user friendly and easy to use responsive webapp for managing tasks",
     githubRepos:"https://github.com/Psamm-y/Todo-list-app",
-    link:"https://psammy-todos.netlify.app/" 
+    link: "https://psammy-todos.netlify.app/" ,
+     delay:"400ms"
   },
   {
     title: "Simple Calculator",
@@ -25,13 +27,15 @@ export const projects = [
     language: ["Reactjs","CSS"],
     description: "A simple calculator but unlike every other, on the web.",
     githubRepos: "",
+     delay:"600ms"
   },
   {
     title: "Student Grade Tracker",
     category: "Desktop App",
     language: ["Java"],
     description: "An application that allows users to add, remove, calculate student grades etc. ",
-    githubRepos:""
+    githubRepos: "https://github.com/Psamm-y/Java-dev/tree/main/StudentGradeTracker",
+     delay:"800ms"
   }
 ];
 export const languageStyles = {

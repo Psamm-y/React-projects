@@ -124,3 +124,14 @@ a {
     padding: 2em;
   }
 }
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  translate: -100px;
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  translate: 0px;
+}
