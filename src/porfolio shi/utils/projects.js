@@ -1,14 +1,15 @@
 
 import todoImage from '../../assets/todo(2).png'
 import QH from '../../assets/QuickHomes.png'
+import QH2 from '../../assets/QH2.png'
 export const projects = [
   {
-     image:QH ,
+     image:QH2 ,
     title: "QuickHomes",
     category: "Web App",
-    language: ["HTML", "CSS","JavaScript"],
+    language: ["Reactjs", "TailwindCSS","JavaScript"],
     description: "Front-end for an accomodation startup",
-    githubRepos: "https://github.com/Psamm-y/QuickHomes",
+    githubRepos: "https://github.com/Psamm-y/QuickHomes-refactored",
     delay:"200ms"
   },
   {
@@ -58,6 +59,9 @@ export const languageStyles = {
   },
   "Java": {
     color: "#007396"
+  }, "TailwindCSS":
+  {
+    color:"#38B2AC"
   }
 }
 export const buttonStyles = {
