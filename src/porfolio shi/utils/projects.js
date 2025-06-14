@@ -28,7 +28,7 @@ export const projects = [
     title: "GitMetrix",
     category: "Web App",
     language: ["Reactjs","TypeScript","TailwindCSS","Framer-motion","Nodejs"],
-    description: "Website thst retrieves github users' stats for comparison",
+    description: "Website that retrieves github users' stats for comparison",
     githubRepos: "https://github.com/Psamm-y/Java-dev/tree/main/StudentGradeTracker",
     delay: "600ms"
   }
